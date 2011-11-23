@@ -13,7 +13,7 @@ import org.apache.log4j.Level
 @Log4j
 class Example {
     def show() {
-        log.setLevel(Level.DEBUG)
+        log.setLevel(Level.INFO)
         println 'Hello World'
         log.info("Log from Groovy Log annotation")
     }
