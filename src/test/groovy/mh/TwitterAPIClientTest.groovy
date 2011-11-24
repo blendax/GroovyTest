@@ -22,9 +22,6 @@ class TwitterAPIClientTest extends GroovyTestCase {
     void testGetHashTagFromTwitter() {
         def twitterAPIClient = new TwitterAPIClient()
         def hashtagAPIRespons = twitterAPIClient.getHashTagFromTwitter()
-        assert hashtagAPIRespons instanceof groovy.util.slurpersupport.GPathResult
-        assert hashtagAPIRespons.HEAD.size() == 1
-        assert hashtagAPIRespons.BODY.size() == 1
         assert hashtagAPIRespons != null
     }
 
